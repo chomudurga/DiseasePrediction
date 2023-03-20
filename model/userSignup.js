@@ -11,20 +11,11 @@ const users = sequelize.define("users",{
     userName:{
         type: Sequelize.STRING,
         allowNull :false,
-        references :{
-            model : 'userlogin',
-            key : 'userName'
-        }
     },
     email:{
         type : Sequelize.STRING,
         allowNull : false,
         unique : true,
-        references :{
-            model : 'userlogin',
-            key : 'email'
-        }
-
     },
     mobileNumber:{
         type : Sequelize.STRING,
@@ -38,10 +29,7 @@ const users = sequelize.define("users",{
     password :{
            type : Sequelize.STRING,
            allowNUll : false,
-           references :{
-            model : 'userlogin',
-            key : 'password' 
-           }
+           
     },
     role :{
         type : Sequelize.STRING,
