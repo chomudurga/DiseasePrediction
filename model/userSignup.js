@@ -43,6 +43,10 @@ const users = sequelize.define("users",{
             key : 'password' 
            }
     },
+    role :{
+        type : Sequelize.STRING,
+        allowNull : false
+    },
     gender:{
         type : Sequelize.STRING,
         allowNull : false,
